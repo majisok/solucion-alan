@@ -65,6 +65,13 @@ public List ListaDeProductosFiltrada(List unaLista) {
 	Majo, me ayudó un montón tu solución pero no debería recibir como parametro la lista de 
 	productos sin filtro además de la letra? Sino no entiendo cómo encuentra la lista posta
 	para dejar solo los productos que arrancan con tal letra.
+	//////////////////////////////////
+	- Tenés razón. Como el atributo es de clase, global, pensé que tenía acceso directo. Capáz sea 
+	más correcto así:
+	for(Productos p: getProductos()) ó this.productos
+	Sino pasarlo por parámetro como decís vos: 
+	public List<Productos> ListaDeProductosFiltrada(char letra, List<Productos> productos)
+	???
 
 }
 
